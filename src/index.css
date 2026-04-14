@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-surface text-on-surface;
+    margin: 0;
+  }
+}
+
+@layer components {
+  /* Material Symbols */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: middle;
+    font-size: inherit;
+  }
+
+  /* Glass header */
+  .glass-header {
+    background: rgba(248, 252, 253, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(11, 159, 204, 0.08);
+  }
+
+  /* CTA gradient button */
+  .cta-gradient {
+    background: linear-gradient(135deg, #c96f1c 0%, #0b9fcc 100%);
+  }
+
+  /* Ghost border input style */
+  .ghost-border {
+    border-bottom: 1px solid rgba(195, 198, 208, 0.4);
+    transition: border-color 0.2s ease;
+  }
+  .ghost-border:focus-within {
+    border-bottom: 2px solid #0b9fcc;
+  }
+
+  /* Input / select / textarea focus reset */
+  .ghost-border input:focus,
+  .ghost-border select:focus,
+  .ghost-border textarea:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* Editorial shadow */
+  .editorial-shadow {
+    box-shadow: 0 20px 40px rgba(11, 159, 204, 0.1);
+  }
+
+  /* Primary gradient background */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #087897 0%, #0b9fcc 62%, #c96f1c 100%);
+  }
+}
