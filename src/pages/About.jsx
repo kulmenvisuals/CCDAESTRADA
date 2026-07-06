@@ -1,7 +1,7 @@
 import Icon from '../components/ui/Icon';
 
 const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_ONLUS1Eynm.png';
-const IMG_DIRECTOR = '/img/magnific_retoca-profesionalmente-l_IaMXdRitvE.png';
+const IMG_DIRECTOR = '/img/magnific_retoca-profesionalmente-l_Bm0pDeOoQR.png';
 const IMG_TOOLS = '/img/magnific_retoca-profesionalmente-l_XtcDMJLBfo.png';
 
 export default function About() {
@@ -89,7 +89,7 @@ export default function About() {
               <img
                 src={IMG_DIRECTOR}
                 className="w-full h-full object-cover"
-                alt="Diplomas y acreditaciones del equipo en la clínica"
+                alt="Sala de tratamiento equipada de la clínica"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
             </div>
