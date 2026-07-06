@@ -1,4 +1,5 @@
 import Icon from '../components/ui/Icon';
+import Seo from '../components/Seo';
 
 const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_Te2YnnYVNR.png';
 const IMG_IMPLANTES = '/img/magnific_retoca-profesionalmente-l_xgFK5rQjfW.jpg';
@@ -77,6 +78,11 @@ function ConsultBtn() {
 export default function Treatments() {
   return (
     <main className="pt-24 md:pt-32 pb-16 md:pb-24">
+      <Seo
+        title="Tratamientos dentales en A Estrada | Clínica Dental A Estrada"
+        description="Implantes dentales, ortodoncia invisible y estética dental en A Estrada. Soluciones personalizadas con tecnología 3D y explicación clara. Consulta tu caso: 986 584 974."
+        path="/tratamientos"
+      />
       {/* ── HERO ── */}
       <header className="max-w-7xl mx-auto px-5 md:px-8 mb-16 md:mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -96,7 +102,7 @@ export default function Treatments() {
           </div>
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow">
-              <img src={IMG_HERO} alt="Clínica dental moderna" className="w-full h-full object-cover" />
+              <img src={IMG_HERO} alt="Gabinete de la Clínica Dental A Estrada" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>

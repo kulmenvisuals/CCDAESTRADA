@@ -1,5 +1,6 @@
 import clinicaAestrada from '../assets/clinica-aestrada.webp';
 import Icon from '../components/ui/Icon';
+import Seo from '../components/Seo';
 
 /* ─── Fotos reales aprobadas por el cliente (public/img) ─── */
 const IMG_HERO = clinicaAestrada;
@@ -11,6 +12,11 @@ const IMG_CTA_BG = '/img/magnific_retoca-profesionalmente-l_Pil7wqK42C.png';
 export default function Home() {
   return (
     <main className="pt-20">
+      <Seo
+        title="Dentista en A Estrada | Clínica Dental A Estrada"
+        description="Tu dentista de confianza en A Estrada. Diagnóstico claro, trato cercano y tratamientos completos: implantes, ortodoncia invisible y estética dental. Pide cita: 986 584 974."
+        path="/"
+      />
       {/* ── HERO ── */}
       <section className="relative min-h-[560px] md:min-h-[720px] lg:min-h-[870px] flex items-center overflow-hidden bg-surface py-12 lg:py-0">
         <div className="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
@@ -21,8 +27,8 @@ export default function Home() {
               <span className="text-secondary">Empieza a solucionarlo.</span>
             </h1>
             <p className="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-10">
-              Diagnóstico claro, tratamientos completos y un equipo que te lo
-              explica todo sin rodeos.
+              Tu clínica dental en A Estrada: diagnóstico claro, tratamientos
+              completos y un equipo que te lo explica todo sin rodeos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -149,7 +155,7 @@ export default function Home() {
               <img
                 src={IMG_IMPLANTES}
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
-                alt="Implantes dentales"
+                alt="Implantes dentales en A Estrada"
               />
               <div className="absolute bottom-0 p-8 text-white">
                 <h3 className="text-3xl font-headline font-bold mb-2">Implantes</h3>
@@ -164,7 +170,7 @@ export default function Home() {
               <img
                 src={IMG_ORTODONCIA}
                 className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700"
-                alt="Ortodoncia"
+                alt="Ortodoncia invisible en A Estrada"
               />
               <div className="absolute bottom-0 p-6 text-white">
                 <h3 className="text-2xl font-headline font-bold mb-1">Ortodoncia</h3>
@@ -180,7 +186,7 @@ export default function Home() {
               <img
                 src={IMG_ESTETICA}
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
-                alt="Estética dental"
+                alt="Estética dental en A Estrada"
               />
               <div className="absolute bottom-0 p-6 text-white z-20">
                 <h3 className="text-2xl font-headline font-bold mb-1">Estética</h3>

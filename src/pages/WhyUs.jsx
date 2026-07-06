@@ -1,4 +1,5 @@
 import Icon from '../components/ui/Icon';
+import Seo from '../components/Seo';
 
 const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_ONLUS7rynm.png';
 const IMG_TECH = '/img/magnific_retoca-profesionalmente-l_0pZnz4QTfW.png';
@@ -9,6 +10,11 @@ const IMG_TEAM_3 = '/img/personal-3.png';
 export default function WhyUs() {
   return (
     <main className="pt-20">
+      <Seo
+        title="Por qué elegirnos | Dentista en A Estrada — Clínica Dental A Estrada"
+        description="Por qué elegir Clínica Dental A Estrada: transparencia, tecnología con propósito y un equipo cercano. Tu dentista de confianza en A Estrada. Llámanos: 986 584 974."
+        path="/por-que-nosotros"
+      />
       {/* ── HERO ── */}
       <section className="relative min-h-[716px] flex items-center px-5 md:px-8 overflow-hidden bg-surface">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
@@ -32,7 +38,7 @@ export default function WhyUs() {
             <div className="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low relative">
               <img
                 src={IMG_HERO}
-                alt="Interior de la clínica"
+                alt="Interior de la Clínica Dental A Estrada"
                 className="w-full h-full object-cover grayscale-[20%] opacity-90"
               />
               <div className="absolute -bottom-8 -left-8 p-8 bg-surface-container-lowest shadow-2xl rounded-lg max-w-[280px]">

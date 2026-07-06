@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <footer className="bg-surface-container-low w-full py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-5 md:px-8">
         {/* Brand */}
         <div className="space-y-4">
           <div className="font-headline font-bold text-primary text-xl">CCD A Estrada</div>
@@ -60,10 +60,14 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/50 text-center">
-        <p className="font-body text-sm leading-relaxed text-on-surface-variant">
-          © 2024 Centro Clínico Dental A Estrada. Calvo Sotelo 29, A Estrada. Tel: 986 584 974
-        </p>
+      <div className="max-w-7xl mx-auto px-5 md:px-8 mt-16 pt-8 border-t border-outline-variant/50 text-center">
+        <address className="font-body text-sm leading-relaxed text-on-surface-variant not-italic">
+          © {new Date().getFullYear()} Clínica Dental A Estrada · Rúa Calvo Sotelo 29, Centro
+          Comercial San Antón, 36680 A Estrada (Pontevedra) · Tel:{' '}
+          <a href="tel:986584974" className="hover:text-primary underline-offset-4 hover:underline">
+            986 584 974
+          </a>
+        </address>
       </div>
     </footer>
   );

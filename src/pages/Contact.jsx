@@ -1,4 +1,5 @@
 import Icon from '../components/ui/Icon';
+import Seo from '../components/Seo';
 
 const MAPS_EMBED_SRC =
   'https://www.google.com/maps?q=Cl%C3%ADnica%20A%20Estrada%2C%20Rua%20Calvo%20Sotelo%2C%2029%2C%2036680%20A%20Estrada%2C%20Pontevedra&output=embed';
@@ -8,6 +9,11 @@ const MAPS_LINK_SRC =
 export default function Contact() {
   return (
     <main className="pt-24 md:pt-32 pb-16 md:pb-20 px-5 md:px-6 max-w-7xl mx-auto">
+      <Seo
+        title="Contacto y cita | Dentista en A Estrada — Clínica Dental A Estrada"
+        description="Pide cita en tu dentista de A Estrada. Rúa Calvo Sotelo 29, A Estrada (Pontevedra). Tel. 986 584 974. Horario L-V 9:30–20:30. Te esperamos."
+        path="/contacto"
+      />
       {/* ── HERO TITLE ── */}
       <div className="mb-16 md:mb-24">
         <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-none mb-6">

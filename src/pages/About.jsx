@@ -1,4 +1,5 @@
 import Icon from '../components/ui/Icon';
+import Seo from '../components/Seo';
 
 const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_ONLUS1Eynm.png';
 const IMG_DIRECTOR = '/img/magnific_retoca-profesionalmente-l_Bm0pDeOoQR.png';
@@ -7,6 +8,11 @@ const IMG_TOOLS = '/img/magnific_retoca-profesionalmente-l_XtcDMJLBfo.png';
 export default function About() {
   return (
     <main className="pt-20">
+      <Seo
+        title="Sobre nosotros | Dentista en A Estrada — Clínica Dental A Estrada"
+        description="Somos tu clínica dental en A Estrada: odontología honesta, cercana y sin artificios. Conoce nuestra filosofía y cómo cuidamos de tu salud dental. Pide cita: 986 584 974."
+        path="/sobre-nosotros"
+      />
       {/* ── HERO ── */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
@@ -30,7 +36,7 @@ export default function About() {
             {/* Image */}
             <div className="lg:col-span-5 relative">
               <div className="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow transform rotate-2">
-                <img src={IMG_HERO} className="w-full h-full object-cover" alt="Equipo clínico" />
+                <img src={IMG_HERO} className="w-full h-full object-cover" alt="Instalaciones de la Clínica Dental A Estrada" />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg editorial-shadow max-w-xs hidden md:block">
                 <p className="font-headline font-bold text-primary text-2xl mb-2">Honestidad.</p>
