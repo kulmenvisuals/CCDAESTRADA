@@ -1,11 +1,8 @@
 import Icon from '../components/ui/Icon';
 
-const IMG_HERO =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCWVdqVZUn4TXNIXMtt2DkNbY23jQe5ODpfNqMaoV6Zg8laZrKAY6PXi3GfbSLUaupauglqhq4h3PhBku0SLbcDG1xDohuMbhvx_CkBKxUryb8QYyxPrlBQtJdabbNjQrNdzXQjOFEVxjETvSskftFkCZCrhxKXQshtPe--2FMv6ihQesvDHqcMbguyqNakzUqAgDEc1mM6nIDE8DgYwzNNOs3Ah_wnsLXE7CZnallEX9S7iampqvr14g20rljRWOlKa3VT0-hVY6hh';
-const IMG_DIRECTOR =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuAxjot-1c0RfNIIaGLjdSPkfYYEHhd-dGjZgThZDPXeUcfoAYRzOdgw7BX1uNuKePKqhBxwJtMybRA_AAcSX3fvxPvz9GiLi2AhpxvkAovatL1El2a88L7eBp9fenGMIv4FUhrmyBlikGslcFCVri9jbiwhp3CsQIOhDE-JCP-SU95PBMFgC2g1C-liAszzM4iW9-J5dZxarYI86S5m_MzR5IEdKccBvK3jZBgSoU8cTklGvOszspU5azc9icKTVM2LBdS-LtONy_QU';
-const IMG_TOOLS =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuAa_rH2zFMdEtlSytbriikCVeuPe42fc1Knq7EvmqStUCmbccTgsvdsH1Vioxc54G_0LsoVJC9s-NTsPCHOFuKCcUKaVO6hv-2QOpYfKxTcZaMSMyzLOjb2fIdFZ2hhUZ40iVP1cSGSmKPxmAqK8yeDVibexmaqm2x8E4YbSdlgwlM8n5CE3U2MvOPI_E8l2StKzssFwzRRUkor5p6q-0EC3059W1WEm4LkfnnYn144yFT-Sq8Oe2pg5qJhTU8WmpQs9l5rokRrkwBc';
+const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_ONLUS1Eynm.png';
+const IMG_DIRECTOR = '/img/magnific_retoca-profesionalmente-l_IaMXdRitvE.png';
+const IMG_TOOLS = '/img/magnific_retoca-profesionalmente-l_XtcDMJLBfo.png';
 
 export default function About() {
   return (
@@ -77,10 +74,10 @@ export default function About() {
                 <div className="flex gap-4">
                   <Icon name="health_and_safety" className="text-secondary" />
                   <div>
-                    <p className="font-bold text-on-surface">Sin Innecesarios</p>
+                    <p className="font-bold text-on-surface">Solo lo necesario</p>
                     <p className="text-sm text-on-surface-variant">
-                      Si no es estrictamente necesario para tu salud o estética, no te lo
-                      propondremos.
+                      Si un tratamiento no es estrictamente necesario para tu salud o tu estética,
+                      no te lo propondremos.
                     </p>
                   </div>
                 </div>
@@ -92,7 +89,7 @@ export default function About() {
               <img
                 src={IMG_DIRECTOR}
                 className="w-full h-full object-cover"
-                alt="Director clínico"
+                alt="Diplomas y acreditaciones del equipo en la clínica"
               />
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
             </div>
@@ -108,7 +105,7 @@ export default function About() {
               Cómo Trabajamos
             </h2>
             <p className="text-on-surface-variant max-w-xl mx-auto">
-              Nuestro compromiso no es con los números, es con las personas de A Estrada.
+              Nuestro compromiso está con las personas de A Estrada, no con las estadísticas.
             </p>
           </div>
 
@@ -131,7 +128,7 @@ export default function About() {
             <div className="bg-surface-container-highest rounded-lg p-10 flex flex-col">
               <Icon name="handshake" className="text-4xl text-primary mb-6 block" />
               <h3 className="font-headline text-2xl font-bold text-on-surface mb-2">
-                Cercanía Real
+                Trato Cercano
               </h3>
               <p className="text-on-surface-variant">
                 No somos una centralita. Cuando nos llamas, hablas directamente con nosotros.
@@ -143,8 +140,8 @@ export default function About() {
               <Icon name="auto_awesome" className="text-4xl text-primary-fixed-dim mb-6 block" />
               <h3 className="font-headline text-2xl font-bold mb-2">Tecnología Útil</h3>
               <p className="opacity-80">
-                Solo invertimos en equipos que mejoran directamente tu diagnóstico y confort, no en
-                gadgets de marketing.
+                Incorporamos solo los equipos que mejoran tu diagnóstico y tu comodidad durante el
+                tratamiento.
               </p>
             </div>
 

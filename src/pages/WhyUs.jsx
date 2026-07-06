@@ -1,11 +1,10 @@
 import Icon from '../components/ui/Icon';
 
-const IMG_HERO =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuDXfAWDfyQM9i4iU2MOwfog_ZZQkLu-DDmgQNlpZZT-nBq2ReqPFOZtZCSOag_Rz0BQ4iDNmlXi_u_oZGqz3bCOBZecK5evzAarayXRs370WQAg7VV4re022PToEoadeqWTbzWVHyTa4FRowh5KaAbY_bSlt8lBVhSWg-jmLq32nn3vdGR77L7Y4UhDSSvQ-FSDawZEaQVMHWnHdE8xxuB8jpOc-9wo5kIHMPSHmj43O8JPDIbBhymyadfUnv-uPx9zX_lvZQCEDV-e';
-const IMG_IMPLANT =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCBtmRgQ8IaiZAUQYE72ff17Lot1h4FI1URiav2SHJIiHPiq9J-vCCHNR_FcTm3U82rjahIHtyaPw_7cRSdg4jr4BUXMvuaIuAw4YcaSx_-W9JrnG_uj-2EC8C0pPmjLhzEfmDuvcliUABVWQyBPvE6222hqoIgRS-1aXcj5gHdh2iLKt9icUmmyLm8q1OjYuUAeDJG1JbM1r9TrELOjkxgPLJBE8yVwyGV7_TtO5C2u2EloBzTj3xNvdkaMiBOBrG3-PaUzKr0SjEq';
-const IMG_TEAM =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuA4gl3iVyjGIzgCm6mjIwxqqRlQH3k_IOlCkQbJIbXTtVpWFymEz2rcoU0vKLz2bN6bt30zrU0gr5KD_PIFqPTxdF88BgCYgkFwEQK9GrC354HNe8dJYHBT4E9-EtRiAstEKYo9K8H62I6XjM4j-2xoapJopWgV1nfNQPv3WL65W62ayL01X_4kYTmlz2ihiMfiWKlwaHt-GxThPlOSR33sSSOTxH-e_I7WAQtFXFTzQNPR-cPuKDUn33dUlvNePRce0NhaEVyvGkYH';
+const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_ONLUS7rynm.png';
+const IMG_TECH = '/img/magnific_retoca-profesionalmente-l_0pZnz4QTfW.png';
+const IMG_TEAM_1 = '/img/personal-1.png';
+const IMG_TEAM_2 = '/img/personal-2.png';
+const IMG_TEAM_3 = '/img/personal-3.png';
 
 export default function WhyUs() {
   return (
@@ -16,15 +15,15 @@ export default function WhyUs() {
           {/* Copy */}
           <div className="lg:col-span-7 z-10">
             <span className="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-6">
-              Compromiso Real
+              Nuestro compromiso
             </span>
             <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tight">
-              Elegirnos es entender <br />
-              <span className="text-primary">tu propia salud.</span>
+              La confianza se construye <br />
+              <span className="text-primary">con hechos, no con promesas.</span>
             </h1>
             <p className="text-on-surface-variant text-xl leading-relaxed max-w-2xl">
-              En Centro Clínico Dental A Estrada, hemos sustituido las promesas genéricas por
-              transparencia absoluta. No vendemos tecnología, vendemos claridad.
+              En Centro Clínico Dental A Estrada te explicamos cada diagnóstico con claridad,
+              sin tecnicismos y sin prisas, para que decidas con la información real que necesitas.
             </p>
           </div>
 
@@ -56,7 +55,7 @@ export default function WhyUs() {
               ¿Por qué venir aquí?
             </h2>
             <p className="text-on-surface-variant font-medium">
-              Cambiamos los clichés por verdades clínicas.
+              Estas son las razones, explicadas sin adornos.
             </p>
           </div>
 
@@ -110,8 +109,8 @@ export default function WhyUs() {
                 <Icon name="location_on" className="text-4xl text-secondary-fixed mb-6 block" />
                 <h3 className="font-headline text-2xl font-bold mb-4">Estamos aquí, en A Estrada</h3>
                 <p className="text-secondary-fixed-dim leading-relaxed">
-                  No somos una franquicia. Somos vecinos. Nuestra reputación depende de tu
-                  satisfacción diaria, no de objetivos de ventas nacionales.
+                  No somos una franquicia, somos vecinos: nuestra reputación se construye cada
+                  día, consulta a consulta.
                 </p>
               </div>
               <Icon
@@ -124,8 +123,8 @@ export default function WhyUs() {
             <div className="md:col-span-2 bg-surface-container-highest p-10 rounded-xl flex flex-col md:flex-row gap-10 items-center">
               <div className="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden grayscale">
                 <img
-                  src={IMG_IMPLANT}
-                  alt="Implante dental de titanio"
+                  src={IMG_TECH}
+                  alt="Puesto clínico con radiografía digital en pantalla"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -159,17 +158,33 @@ export default function WhyUs() {
       <section className="py-24 px-8 bg-surface">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
           {/* Image block */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="aspect-video bg-surface-container-high rounded-xl overflow-hidden relative shadow-xl">
-              <img
-                src={IMG_TEAM}
-                className="w-full h-full object-cover"
-                alt="Equipo de dentistas"
-              />
+          <div className="w-full lg:w-1/2 relative pb-16 lg:pb-0">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src={IMG_TEAM_1}
+                  className="w-full h-full object-cover"
+                  alt="Marta Pousa, odontóloga en Centro Clínico Dental A Estrada"
+                />
+              </div>
+              <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl mt-8">
+                <img
+                  src={IMG_TEAM_2}
+                  className="w-full h-full object-cover"
+                  alt="Odontóloga del equipo de Centro Clínico Dental A Estrada"
+                />
+              </div>
+              <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl">
+                <img
+                  src={IMG_TEAM_3}
+                  className="w-full h-full object-cover"
+                  alt="Especialista del equipo de Centro Clínico Dental A Estrada"
+                />
+              </div>
             </div>
-            <div className="absolute -top-6 -right-6 lg:top-auto lg:bottom-12 lg:-right-12 bg-secondary-container p-6 rounded-lg max-w-xs shadow-lg">
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 lg:left-auto lg:-right-12 lg:translate-x-0 bg-secondary-container p-6 rounded-lg max-w-xs shadow-lg">
               <p className="font-headline font-bold text-on-secondary-container italic text-lg leading-tight">
-                "Nuestra prioridad no es el tratamiento más caro, sino el más conservador."
+                "Cada plan de tratamiento lo revisamos como si fuera para nuestra propia familia."
               </p>
             </div>
           </div>
@@ -177,7 +192,7 @@ export default function WhyUs() {
           {/* Text block */}
           <div className="w-full lg:w-1/2">
             <h2 className="font-headline text-4xl font-extrabold text-on-surface mb-8 tracking-tight">
-              Excelencia clínica sin artificios.
+              Un equipo que se forma para cuidarte mejor
             </h2>
             <div className="space-y-12">
               <div className="flex gap-6">
@@ -189,8 +204,8 @@ export default function WhyUs() {
                     Formación continua
                   </h4>
                   <p className="text-on-surface-variant">
-                    Nuestro equipo dedica más de 100 horas anuales a especialización. No es ego, es
-                    seguridad para ti.
+                    Dedicamos más de 100 horas anuales a formación especializada, para ofrecerte
+                    siempre el tratamiento más actualizado y seguro.
                   </p>
                 </div>
               </div>
@@ -203,8 +218,8 @@ export default function WhyUs() {
                     Protocolos de Bioseguridad
                   </h4>
                   <p className="text-on-surface-variant">
-                    Superamos los estándares exigidos. La higiene no es opcional, es el cimiento de
-                    nuestro trabajo.
+                    Cumplimos y superamos los estándares de esterilización e higiene exigidos en
+                    cada una de nuestras consultas.
                   </p>
                 </div>
               </div>

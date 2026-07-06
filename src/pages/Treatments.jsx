@@ -1,13 +1,9 @@
 import Icon from '../components/ui/Icon';
 
-const IMG_HERO =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBXFz9RHIKTWc7-lubtHiDlYQSLG-e6wh2xgwcyuUixka0EGwJK3smz2Od7UZFgY7N21T_ebJF37iyF4pIeTY__2tqGgodlG9P2z__LIsriakkb86VU3XhnpVpk6yhRchLizkKc-Za_eIp1hJCLtbv-jIWUwH6y5gnZlDxkeSH0jvm_BsEX9r7hGZtCGRO04UyVRXb_ugWY6TaoYk_bmVmYOR02m772K-hTXlW84hDPh1S50u_seEf5iSDD563B7LH9tszXnbx2_hjn';
-const IMG_IMPLANTES =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBk1DSCn6NZ-cUsKVMNvwcyOkZAV9LVuxJzmdOmHs3HAYGDUkr2Pbn7kC9UM6tOjuSjP5UQkfg1IkWX9gdBW6_DOoBCxWx4SrTyOHORrG1gyE8u4deFZDPijjyooYw90jX4mT_baqrnXObBOOfZnHRlEq3GepZt6ZeEAfldHQz23KEqGOMLQCnK_o0rLynWft0zHDKS7Uxhz92JGxvtS_6Vqq26hZTk_xq0anmJEeiydF2XwnniC9qXXi-T9aqVw8gv4hH_owxXLR5Z';
-const IMG_ORTODONCIA =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCUiEskJ5t66hjx486hBxufeEEsssjFVlimqkgqjAqBUhQa2cKVqMOkpucy3N0WjW9FAE2IE0D_7buJYqo3RfwuDKECC1XDK7DQWiKwhCoEY757XhWHEt1zyNXILqoa3M6EGaCg7u42oujCTjbkbQcmNWBAhMx00P-5lnGB5QN5XrY6H4rkCWjNvqul9QSBcnCTN4CcVgUHgRDMxK1uJlhWa_6f0Ge8_O_5NDFFvrLIm3wLAddT6-F3KRPn6TL2HUDMpSafX2l3Mg9P';
-const IMG_ESTETICA =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCI3BUDADhy5o7Y3wU0I0bMhTDBaj_YJRF4nQo3aUH-bMfX1xo1J57oj9y00ZWlantUTqqVEBH4J766-vcoaI9kKA5-IBhXo85g8_6N6SUApgF6z4cjZfWryc1oXwUqnRgLonueJAglC25w98AiZ8ggJ-NuFO4LqiNbG5ffnCfxUodnSCJztxnDO34sHoD6fUfkt0TuXAxJXcxJWfWESF3BsqqWY95Q0c2tlPGJCOePgiezn9FNHPTWpcaQH25wX4YqQCc5h8RkqC_M';
+const IMG_HERO = '/img/magnific_retoca-profesionalmente-l_Te2YnnYVNR.png';
+const IMG_IMPLANTES = '/img/magnific_retoca-profesionalmente-l_xgFK5rQjfW.jpg';
+const IMG_ORTODONCIA = '/img/magnific_retoca-profesionalmente-l_YViA23xWeC.png';
+const IMG_ESTETICA = '/img/magnific_retoca-profesionalmente-l_9RSOO6ENYZ.png';
 
 function TreatmentCard({ title, queSrc, imgAlt, flipLayout, children }) {
   const textBlock = (
@@ -199,8 +195,8 @@ export default function Treatments() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {[
-            { icon: 'clinical_notes', label: 'Diagnóstico Real' },
-            { icon: 'verified', label: 'Materiales Top' },
+            { icon: 'clinical_notes', label: 'Diagnóstico preciso' },
+            { icon: 'verified', label: 'Materiales de calidad' },
             { icon: 'schedule', label: 'Sin Esperas' },
           ].map(({ icon, label }) => (
             <div key={label} className="p-6">

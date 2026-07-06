@@ -1,16 +1,12 @@
 import clinicaAestrada from '../assets/clinica-aestrada.webp';
 import Icon from '../components/ui/Icon';
 
-/* ─── Image URLs from the original prototype ─── */
+/* ─── Fotos reales aprobadas por el cliente (public/img) ─── */
 const IMG_HERO = clinicaAestrada;
-const IMG_IMPLANTES =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCRdRjlNFW3pxRJZuEszH_Y12uhs-TpDdYJESzbXE7EjvCZKRN5FAH_IfeX5Fmhfxbjx0W5w5O3qV1VYpnWDL_k2BiOw2pGLyE-hdwNXsziWITb-KYgPXH8v5exxta5ZP1DniXcdExD2gmo10D5oPPPqvqw00i8yRL7_CZnLjPOWvW3Czff_d_-W-nN1lt_gG4UZZaJ0_71CLiFz7Gx9MKw5_o7P8wAMuL7LfFF-EDzM7LaYzcOHISxQVB64EENPbrJV3uT7LvXrgmb';
-const IMG_ORTODONCIA =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBatqIDb7HmzvkNO_z-3omayr_LKvI7wyPW7gAXM1mjWKM9NTHWD-DbdNO60aXFwdNmx0h4XJl7VYoFXhIsVnaU4cm3_g8BUFLoen3VJuuM0cE2TD58bEsTxoxn67uDGhhuMnkAxboHIIj5qTtH7q3uCYbEWJfNh9atgOYkuVXsz7XX1SApfb_IPKf0inyKjE3E1epujErPbV4p4DH5pZ0Wq1VQ7oDwP-iJNdHgpMMa1QVIoTBpi_1X0xlPi0XfFkJbKwUb5Vb9kg7K';
-const IMG_ESTETICA =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCaX2sdn_aLyAwwonOfWysRp-2bJ4BzyIRaLWyMim6jDghs01DUR0mv5g6ammDdhQUjv1F__Zc1ufnhCubyG9U2IVz2n-O0DmRZRncUN9Zt6TVzgsgcZrMlyoohuyZ0YwSw2ELl9wwLL51PR6XIoQj-4PChikt6lezrvxEae3q34AtZYi2yEpvzyGgpAuNUkwoLaymvayta41SO02cmUMJV33Y1zksSAiQBrPCvISM_TljCO3Z7OkzhCwzdik2B70SKtZEy6l-4wLND';
-const IMG_CTA_BG =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCVv2bQftxCT4Yaw6QA3Gateb0Bc8R7CMZwvUu1WSsX2XbVcjmNLpXftK_vyFemK3ydiOruh0nakj6yp0zMsXWVN0nsZK1eWSE7eUctSuEf9LuP39nvRiiy_K5HWPyLlBgrXQ5n0HNNcqnuU1BwSiD5_wc5qt3hoUW_QWM4RwSlHZepSkoIyJPgehI7LgW2E3eSqlM3V_qCfKUcLp8ldBLXX6kKucQ8IejBbuFry6eQPQvDAGHjJHQtA_DFhKt4GBVZME13nBCYo_qS';
+const IMG_IMPLANTES = '/img/magnific_retoca-profesionalmente-l_xgFK5rQjfW.jpg';
+const IMG_ORTODONCIA = '/img/magnific_retoca-profesionalmente-l_YViA23xWeC.png';
+const IMG_ESTETICA = '/img/magnific_retoca-profesionalmente-l_9RSOO6ENYZ.png';
+const IMG_CTA_BG = '/img/magnific_retoca-profesionalmente-l_Pil7wqK42C.png';
 
 export default function Home() {
   return (
@@ -101,7 +97,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-secondary font-bold tracking-widest uppercase text-xs">
-                Empatía Real
+                Te escuchamos primero
               </span>
               <h2 className="font-headline text-4xl font-extrabold text-primary mt-2">
                 Si te pasa esto, te podemos ayudar
@@ -144,7 +140,7 @@ export default function Home() {
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-8">
           <h2 className="font-headline text-4xl font-extrabold text-primary mb-16 text-center">
-            Especialidades con alma
+            Nuestras especialidades
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
@@ -202,10 +198,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20">
             <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">
-              Nuestro método es la claridad
+              Así trabajamos
             </h2>
             <p className="text-on-surface-variant max-w-2xl mx-auto text-lg">
-              Sin sorpresas, sin miedos. Solo odontología honesta.
+              Un proceso claro, sin sorpresas, para que llegues a cada cita con tranquilidad.
             </p>
           </div>
 

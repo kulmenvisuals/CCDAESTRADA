@@ -1,7 +1,9 @@
 import Icon from '../components/ui/Icon';
 
-const IMG_MAP =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuDlEMvw8lUkyHLM2yDm8mPdLPcxn8wqHH07vwrZzFb93hFfB41C35Tc9zcPGADGWv6igvgpZVBGH3q0Xjad9qZ3ve7Lom3U5kXvqNPIHBtt_PYVL3KYVcZzwuEL6NkRlDbJEznG6Dq9DYhizI22DePrZpgjGnDpZKGYd9AdqqHVnVnY8SIuVaaZxH3lkJRD2W9s096HM2HLaKk72YmQC1AVscZ6QfB2BuHEqhnF7sBnszBYq9vXpucwFUfwTCIITpj8WHlEkW9XRzca';
+const MAPS_EMBED_SRC =
+  'https://www.google.com/maps?q=Cl%C3%ADnica%20A%20Estrada%2C%20Rua%20Calvo%20Sotelo%2C%2029%2C%2036680%20A%20Estrada%2C%20Pontevedra&output=embed';
+const MAPS_LINK_SRC =
+  'https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+A+Estrada+Rua+Calvo+Sotelo+29+36680+A+Estrada+Pontevedra';
 
 export default function Contact() {
   return (
@@ -78,19 +80,23 @@ export default function Contact() {
           </div>
 
           {/* Map */}
-          <div className="relative h-64 md:h-80 w-full rounded-xl overflow-hidden shadow-sm group">
-            <div className="absolute inset-0 bg-slate-200 flex items-center justify-center">
-              <img
-                src={IMG_MAP}
-                alt="Mapa de ubicación"
-                className="w-full h-full object-cover grayscale opacity-50 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-primary/10" />
-              <div className="absolute bg-white px-4 py-2 rounded-lg shadow-xl font-bold text-primary flex items-center gap-2">
-                <Icon name="explore" />
-                Ver en Google Maps
-              </div>
-            </div>
+          <div className="relative h-64 md:h-80 w-full rounded-xl overflow-hidden shadow-sm">
+            <iframe
+              src={MAPS_EMBED_SRC}
+              title="Ubicación de Centro Clínico Dental A Estrada en el mapa"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a
+              href={MAPS_LINK_SRC}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-lg shadow-xl font-bold text-primary flex items-center gap-2 hover:bg-surface-container-low transition-colors"
+            >
+              <Icon name="explore" />
+              Ver en Google Maps
+            </a>
           </div>
         </div>
 

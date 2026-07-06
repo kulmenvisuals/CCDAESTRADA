@@ -32,15 +32,15 @@
 
   /* Glass header */
   .glass-header {
-    background: rgba(248, 252, 253, 0.88);
+    background: rgba(247, 249, 251, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(11, 159, 204, 0.08);
+    border-bottom: 1px solid rgba(14, 59, 105, 0.08);
   }
 
   /* CTA gradient button */
   .cta-gradient {
-    background: linear-gradient(135deg, #c96f1c 0%, #0b9fcc 100%);
+    background: linear-gradient(135deg, #3c6752 0%, #0e3b69 100%);
   }
 
   /* Ghost border input style */
@@ -49,7 +49,7 @@
     transition: border-color 0.2s ease;
   }
   .ghost-border:focus-within {
-    border-bottom: 2px solid #0b9fcc;
+    border-bottom: 2px solid #0e3b69;
   }
 
   /* Input / select / textarea focus reset */
@@ -62,11 +62,11 @@
 
   /* Editorial shadow */
   .editorial-shadow {
-    box-shadow: 0 20px 40px rgba(11, 159, 204, 0.1);
+    box-shadow: 0 20px 40px rgba(14, 59, 105, 0.06);
   }
 
   /* Primary gradient background */
   .bg-gradient-primary {
-    background: linear-gradient(135deg, #087897 0%, #0b9fcc 62%, #c96f1c 100%);
+    background: linear-gradient(135deg, #0e3b69 0%, #2c5282 100%);
   }
 }
