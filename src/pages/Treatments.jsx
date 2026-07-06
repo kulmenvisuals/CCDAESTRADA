@@ -9,7 +9,7 @@ function TreatmentCard({ title, queSrc, imgAlt, flipLayout, children }) {
   const textBlock = (
     <div className={`order-2 ${flipLayout ? 'lg:order-1' : ''}`}>
       <div
-        className={`bg-surface-container-lowest p-10 lg:p-16 rounded-xl editorial-shadow relative z-10 ${
+        className={`bg-surface-container-lowest p-6 sm:p-10 lg:p-16 rounded-xl editorial-shadow relative z-10 ${
           flipLayout ? '-mr-0 lg:-mr-20' : '-ml-0 lg:-ml-20'
         }`}
       >
@@ -28,7 +28,7 @@ function TreatmentCard({ title, queSrc, imgAlt, flipLayout, children }) {
   );
 
   return (
-    <article className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
       {flipLayout ? (
         <>
           {textBlock}
@@ -76,9 +76,9 @@ function ConsultBtn() {
 
 export default function Treatments() {
   return (
-    <main className="pt-32 pb-24">
+    <main className="pt-24 md:pt-32 pb-16 md:pb-24">
       {/* ── HERO ── */}
-      <header className="max-w-7xl mx-auto px-8 mb-24">
+      <header className="max-w-7xl mx-auto px-5 md:px-8 mb-16 md:mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
             <span className="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container text-xs font-bold rounded-full mb-6 tracking-wider uppercase">
@@ -103,7 +103,7 @@ export default function Treatments() {
       </header>
 
       {/* ── TREATMENTS ── */}
-      <section className="max-w-7xl mx-auto px-8 space-y-32">
+      <section className="max-w-7xl mx-auto px-5 md:px-8 space-y-20 md:space-y-32">
         {/* Implantes */}
         <TreatmentCard
           title="Implantes dentales en A Estrada"
@@ -184,7 +184,7 @@ export default function Treatments() {
       </section>
 
       {/* ── TRUST / SEO HOOK ── */}
-      <section className="mt-32 max-w-4xl mx-auto px-8 text-center">
+      <section className="mt-20 md:mt-32 max-w-4xl mx-auto px-5 md:px-8 text-center">
         <h2 className="font-headline text-3xl font-bold text-on-surface mb-6">
           ¿Por qué elegirnos como tu dentista en A Estrada?
         </h2>

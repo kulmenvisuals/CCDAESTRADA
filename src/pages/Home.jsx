@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <main className="pt-20">
       {/* ── HERO ── */}
-      <section className="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+      <section className="relative min-h-[560px] md:min-h-[720px] lg:min-h-[870px] flex items-center overflow-hidden bg-surface py-12 lg:py-0">
+        <div className="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
           {/* Copy */}
           <div className="lg:col-span-7 z-10">
             <h1 className="font-headline text-5xl lg:text-7xl font-extrabold text-primary leading-tight tracking-tighter mb-6">
@@ -61,8 +61,8 @@ export default function Home() {
       </section>
 
       {/* ── TRUST BUILDERS ── */}
-      <section className="py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
@@ -92,8 +92,8 @@ export default function Home() {
       </section>
 
       {/* ── REAL PROBLEMS ── */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <span className="text-secondary font-bold tracking-widest uppercase text-xs">
@@ -137,15 +137,15 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED SERVICES (BENTO) ── */}
-      <section className="py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <h2 className="font-headline text-4xl font-extrabold text-primary mb-16 text-center">
             Nuestras especialidades
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
             {/* Implantes — large */}
-            <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl bg-primary">
+            <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl bg-primary min-h-[340px] md:min-h-0">
               <img
                 src={IMG_IMPLANTES}
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
 
             {/* Ortodoncia */}
-            <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl bg-secondary">
+            <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl bg-secondary min-h-[260px] md:min-h-0">
               <img
                 src={IMG_ORTODONCIA}
                 className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700"
@@ -175,7 +175,7 @@ export default function Home() {
             </div>
 
             {/* Estética */}
-            <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl bg-primary-container">
+            <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-xl bg-primary-container min-h-[260px] md:min-h-0">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-container/55 to-transparent z-10" />
               <img
                 src={IMG_ESTETICA}
@@ -194,8 +194,8 @@ export default function Home() {
       </section>
 
       {/* ── HOW WE WORK ── */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-20">
             <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">
               Así trabajamos
@@ -244,8 +244,8 @@ export default function Home() {
       </section>
 
       {/* ── TESTIMONIALS ── */}
-      <section className="py-24 bg-surface-container-low overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 bg-surface-container-low overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <h2 className="font-headline text-4xl font-extrabold text-primary mb-16 text-center">
             Lo que dicen nuestros pacientes
           </h2>
@@ -296,11 +296,11 @@ export default function Home() {
       </section>
 
       {/* ── FINAL CTA ── */}
-      <section className="py-24 bg-primary relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <img src={IMG_CTA_BG} className="w-full h-full object-cover" alt="" />
         </div>
-        <div className="max-w-4xl mx-auto px-8 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-5 md:px-8 text-center relative z-10">
           <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-white mb-8">
             Da el paso. Pide tu cita.
           </h2>

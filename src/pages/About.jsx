@@ -8,8 +8,8 @@ export default function About() {
   return (
     <main className="pt-20">
       {/* ── HERO ── */}
-      <section className="relative py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Copy */}
             <div className="lg:col-span-7 z-10">
@@ -44,8 +44,8 @@ export default function About() {
       </section>
 
       {/* ── CLINICAL DIRECTOR PROTOCOL ── */}
-      <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="bg-surface-container-low py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="bg-surface-container-lowest rounded-xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-0 editorial-shadow">
             {/* Text */}
             <div className="p-12 lg:p-20 flex flex-col justify-center">
@@ -98,8 +98,8 @@ export default function About() {
       </section>
 
       {/* ── VALUES GRID ── */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-16">
             <h2 className="font-headline text-4xl font-extrabold text-on-surface mb-4 tracking-tight">
               Cómo Trabajamos
@@ -167,7 +167,7 @@ export default function About() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24 max-w-7xl mx-auto px-8">
+      <section className="py-16 md:py-24 max-w-7xl mx-auto px-5 md:px-8">
         <div className="bg-gradient-primary rounded-xl p-12 md:p-20 text-center text-white relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="font-headline text-4xl font-extrabold mb-6 tracking-tight">

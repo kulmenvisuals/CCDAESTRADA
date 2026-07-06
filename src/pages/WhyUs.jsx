@@ -10,7 +10,7 @@ export default function WhyUs() {
   return (
     <main className="pt-20">
       {/* ── HERO ── */}
-      <section className="relative min-h-[716px] flex items-center px-8 overflow-hidden bg-surface">
+      <section className="relative min-h-[716px] flex items-center px-5 md:px-8 overflow-hidden bg-surface">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
           {/* Copy */}
           <div className="lg:col-span-7 z-10">
@@ -48,7 +48,7 @@ export default function WhyUs() {
       </section>
 
       {/* ── BENTO GRID: REAL BENEFITS ── */}
-      <section className="py-24 px-8 bg-surface-container-low">
+      <section className="py-16 md:py-24 px-5 md:px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h2 className="font-headline text-3xl font-bold text-on-surface mb-4">
@@ -155,7 +155,7 @@ export default function WhyUs() {
       </section>
 
       {/* ── TRUST LAYER: ASYMMETRIC PROFILE ── */}
-      <section className="py-24 px-8 bg-surface">
+      <section className="py-16 md:py-24 px-5 md:px-8 bg-surface">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
           {/* Image block */}
           <div className="w-full lg:w-1/2 relative pb-16 lg:pb-0">
@@ -229,7 +229,7 @@ export default function WhyUs() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24 px-8 bg-primary">
+      <section className="py-16 md:py-24 px-5 md:px-8 bg-primary">
         <div className="max-w-4xl mx-auto text-center text-on-primary">
           <h2 className="font-headline text-4xl font-bold mb-6">¿Hablamos de tu caso?</h2>
           <p className="text-primary-fixed-dim text-xl mb-10 max-w-2xl mx-auto">

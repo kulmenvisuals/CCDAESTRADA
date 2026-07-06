@@ -7,7 +7,7 @@ const MAPS_LINK_SRC =
 
 export default function Contact() {
   return (
-    <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+    <main className="pt-24 md:pt-32 pb-16 md:pb-20 px-5 md:px-6 max-w-7xl mx-auto">
       {/* ── HERO TITLE ── */}
       <div className="mb-16 md:mb-24">
         <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-none mb-6">
