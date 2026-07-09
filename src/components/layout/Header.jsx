@@ -30,11 +30,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 glass-header">
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20">
-        <NavLink
-          to="/"
-          className="text-lg md:text-xl font-bold text-primary font-headline tracking-tight"
-        >
-          CCD A Estrada
+        <NavLink to="/" className="flex items-center">
+          <img
+            src="/img/logo-ccd-horizontal.png"
+            alt="CCD A Estrada — Centro Clínico Dental"
+            className="h-7 md:h-9 w-auto"
+          />
         </NavLink>
 
         {/* Desktop links */}
