@@ -1,12 +1,39 @@
+import { useState } from 'react';
 import Icon from '../components/ui/Icon';
 import Seo from '../components/Seo';
 
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/policlinicaaestrada@hotmail.es';
 const MAPS_EMBED_SRC =
   'https://www.google.com/maps?q=Cl%C3%ADnica%20A%20Estrada%2C%20Rua%20Calvo%20Sotelo%2C%2029%2C%2036680%20A%20Estrada%2C%20Pontevedra&output=embed';
 const MAPS_LINK_SRC =
   'https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+A+Estrada+Rua+Calvo+Sotelo+29+36680+A+Estrada+Pontevedra';
 
 export default function Contact() {
+  const [status, setStatus] = useState('idle');
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setStatus('sending');
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          ...Object.fromEntries(new FormData(form)),
+          _subject: 'Nueva solicitud de cita desde la web',
+          _template: 'table',
+          _captcha: 'false',
+        }),
+      });
+      if (!response.ok) throw new Error('Fallo en el envío');
+      form.reset();
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
+  }
+
   return (
     <main className="pt-24 md:pt-32 pb-16 md:pb-20 px-5 md:px-6 max-w-7xl mx-auto">
       <Seo
@@ -118,7 +145,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <form className="space-y-8">
+          <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="ghost-border py-2">
                 <label className="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">
@@ -126,6 +153,8 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
+                  name="Nombre"
+                  required
                   placeholder="Ej. Ana García"
                   className="w-full bg-transparent py-2 font-medium text-on-surface placeholder:text-outline-variant"
                 />
@@ -136,6 +165,8 @@ export default function Contact() {
                 </label>
                 <input
                   type="tel"
+                  name="Teléfono"
+                  required
                   placeholder="Ej. 600 000 000"
                   className="w-full bg-transparent py-2 font-medium text-on-surface placeholder:text-outline-variant"
                 />
@@ -146,7 +177,11 @@ export default function Contact() {
               <label className="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">
                 Motivo de la visita
               </label>
-              <select className="w-full bg-transparent py-2 font-medium text-on-surface appearance-none cursor-pointer">
+              <select
+                name="Motivo"
+                required
+                className="w-full bg-transparent py-2 font-medium text-on-surface appearance-none cursor-pointer"
+              >
                 <option value="">Selecciona un tratamiento</option>
                 <option value="revision">Revisión General</option>
                 <option value="higiene">Higiene Dental</option>
@@ -163,6 +198,7 @@ export default function Contact() {
               </label>
               <textarea
                 rows={3}
+                name="Mensaje"
                 placeholder="¿Quieres comentarnos algo más?"
                 className="w-full bg-transparent py-2 font-medium text-on-surface placeholder:text-outline-variant resize-none"
               />
@@ -171,11 +207,24 @@ export default function Contact() {
             <div className="pt-6">
               <button
                 type="submit"
-                className="w-full cta-gradient text-white py-5 rounded-lg font-bold text-lg tracking-widest uppercase shadow-xl hover:shadow-2xl transition-all active:scale-[0.98] flex items-center justify-center gap-3"
+                disabled={status === 'sending'}
+                className="w-full cta-gradient text-white py-5 rounded-lg font-bold text-lg tracking-widest uppercase shadow-xl hover:shadow-2xl transition-all active:scale-[0.98] flex items-center justify-center gap-3 disabled:opacity-60 disabled:pointer-events-none"
               >
-                Enviar Solicitud
+                {status === 'sending' ? 'Enviando…' : 'Enviar Solicitud'}
                 <Icon name="send" />
               </button>
+              {status === 'success' && (
+                <div className="mt-6 bg-secondary-container text-on-secondary-container p-5 rounded-lg flex items-center gap-3 font-medium">
+                  <Icon name="check_circle" className="text-2xl" />
+                  Solicitud enviada correctamente. Te llamaremos lo antes posible.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="mt-6 bg-red-50 text-red-800 p-5 rounded-lg flex items-center gap-3 font-medium">
+                  <Icon name="error" className="text-2xl" />
+                  No se pudo enviar la solicitud. Inténtalo de nuevo o llámanos al 986 584 974.
+                </div>
+              )}
               <p className="text-center text-xs text-outline-variant mt-6 px-4">
                 Al hacer clic en enviar, aceptas nuestra política de privacidad y el tratamiento de
                 tus datos para la gestión de citas.
