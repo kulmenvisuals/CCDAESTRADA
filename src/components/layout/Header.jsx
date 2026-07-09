@@ -34,7 +34,7 @@ export default function Header() {
           <img
             src="/img/logo-ccd-horizontal.png"
             alt="CCD A Estrada — Centro Clínico Dental"
-            className="h-7 md:h-9 w-auto"
+            className="h-9 md:h-11 w-auto"
           />
         </NavLink>
 
