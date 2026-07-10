@@ -62,7 +62,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto px-5 md:px-8 mt-16 pt-8 border-t border-outline-variant/50 text-center">
         <address className="font-body text-sm leading-relaxed text-on-surface-variant not-italic">
-          © {new Date().getFullYear()} Clínica Dental A Estrada · Rúa Calvo Sotelo 29, Centro
+          © {new Date().getFullYear()} Centro Clínico Dental A Estrada · Rúa Calvo Sotelo 29, Centro
           Comercial San Antón, 36680 A Estrada (Pontevedra) · Tel:{' '}
           <a href="tel:986584974" className="hover:text-primary underline-offset-4 hover:underline">
             986 584 974

@@ -79,7 +79,7 @@ export default function Treatments() {
   return (
     <main className="pt-24 md:pt-32 pb-16 md:pb-24">
       <Seo
-        title="Tratamientos dentales en A Estrada | Clínica Dental A Estrada"
+        title="Tratamientos dentales en A Estrada | Centro Clínico Dental A Estrada"
         description="Implantes dentales, ortodoncia invisible y estética dental en A Estrada. Soluciones personalizadas con tecnología 3D y explicación clara. Consulta tu caso: 986 584 974."
         path="/tratamientos"
       />

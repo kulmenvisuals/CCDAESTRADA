@@ -11,8 +11,8 @@ export default function WhyUs() {
   return (
     <main className="pt-20">
       <Seo
-        title="Por qué elegirnos | Dentista en A Estrada — Clínica Dental A Estrada"
-        description="Por qué elegir Clínica Dental A Estrada: transparencia, tecnología con propósito y un equipo cercano. Tu dentista de confianza en A Estrada. Llámanos: 986 584 974."
+        title="Por qué elegirnos | Centro Clínico Dental A Estrada"
+        description="Por qué elegir el Centro Clínico Dental A Estrada: transparencia, tecnología con propósito y un equipo cercano. Tu dentista de confianza en A Estrada. Llámanos: 986 584 974."
         path="/por-que-nosotros"
       />
       {/* ── HERO ── */}

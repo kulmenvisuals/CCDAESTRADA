@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <main className="pt-24 md:pt-32 pb-16 md:pb-20 px-5 md:px-6 max-w-7xl mx-auto">
       <Seo
-        title="Contacto y cita | Dentista en A Estrada — Clínica Dental A Estrada"
+        title="Contacto y cita | Centro Clínico Dental A Estrada"
         description="Pide cita en tu dentista de A Estrada. Rúa Calvo Sotelo 29, A Estrada (Pontevedra). Tel. 986 584 974. Horario L-V 9:30–20:30. Te esperamos."
         path="/contacto"
       />

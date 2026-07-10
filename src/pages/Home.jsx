@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="pt-20">
       <Seo
-        title="Dentista en A Estrada | Clínica Dental A Estrada"
+        title="Dentista en A Estrada | Centro Clínico Dental A Estrada"
         description="Tu dentista de confianza en A Estrada. Diagnóstico claro, trato cercano y tratamientos completos: implantes, ortodoncia invisible y estética dental. Pide cita: 986 584 974."
         path="/"
       />

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <main className="pt-20">
       <Seo
-        title="Sobre nosotros | Dentista en A Estrada — Clínica Dental A Estrada"
+        title="Sobre nosotros | Centro Clínico Dental A Estrada"
         description="Somos tu clínica dental en A Estrada: odontología honesta, cercana y sin artificios. Conoce nuestra filosofía y cómo cuidamos de tu salud dental. Pide cita: 986 584 974."
         path="/sobre-nosotros"
       />
